@@ -8,4 +8,6 @@
 
 @interface TCScreamer : NSObject
 
+- (void)startObserving;
+
 @end

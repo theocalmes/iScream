@@ -21,7 +21,19 @@ TCScreamer *screamer;
 
     screamer = [[TCScreamer alloc] init];
 
+    UIButton *start = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [start setTitle:@"Start" forState:UIControlStateNormal];
+    start.center = self.window.center;
+    [start addTarget:self action:@selector(startDetectingMovement) forControlEvents:UIControlEventTouchUpInside];
+
+    [self.window addSubview:start];
+
     return YES;
+}
+
+- (void)startDetectingMovement
+{
+    [screamer startObserving];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
