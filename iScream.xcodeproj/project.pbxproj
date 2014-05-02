@@ -19,6 +19,9 @@
 		E4F1B3D8191443B400EEF9DC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4F1B3C0191443B400EEF9DC /* UIKit.framework */; };
 		E4F1B3E0191443B400EEF9DC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E4F1B3DE191443B400EEF9DC /* InfoPlist.strings */; };
 		E4F1B3E2191443B400EEF9DC /* iScreamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F1B3E1191443B400EEF9DC /* iScreamTests.m */; };
+		E4F1B3EC1914448C00EEF9DC /* falling.wav in Resources */ = {isa = PBXBuildFile; fileRef = E4F1B3EB1914448C00EEF9DC /* falling.wav */; };
+		E4F1B3EF191444B600EEF9DC /* TCScreamer.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F1B3EE191444B600EEF9DC /* TCScreamer.m */; };
+		E4F1B3F21914491500EEF9DC /* ATSNumericalQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F1B3F11914491500EEF9DC /* ATSNumericalQueue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,12 @@
 		E4F1B3DD191443B400EEF9DC /* iScreamTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iScreamTests-Info.plist"; sourceTree = "<group>"; };
 		E4F1B3DF191443B400EEF9DC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E4F1B3E1191443B400EEF9DC /* iScreamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iScreamTests.m; sourceTree = "<group>"; };
+		E4F1B3EB1914448C00EEF9DC /* falling.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = falling.wav; sourceTree = "<group>"; };
+		E4F1B3ED191444B600EEF9DC /* TCScreamer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TCScreamer.h; sourceTree = "<group>"; };
+		E4F1B3EE191444B600EEF9DC /* TCScreamer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TCScreamer.m; sourceTree = "<group>"; };
+		E4F1B3F01914491500EEF9DC /* ATSNumericalQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATSNumericalQueue.h; sourceTree = "<group>"; };
+		E4F1B3F11914491500EEF9DC /* ATSNumericalQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATSNumericalQueue.m; sourceTree = "<group>"; };
+		E4F1B3F31914497600EEF9DC /* ATSMath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ATSMath.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,8 +116,14 @@
 		E4F1B3C2191443B400EEF9DC /* iScream */ = {
 			isa = PBXGroup;
 			children = (
+				E4F1B3F01914491500EEF9DC /* ATSNumericalQueue.h */,
+				E4F1B3F11914491500EEF9DC /* ATSNumericalQueue.m */,
 				E4F1B3CB191443B400EEF9DC /* TCAppDelegate.h */,
 				E4F1B3CC191443B400EEF9DC /* TCAppDelegate.m */,
+				E4F1B3ED191444B600EEF9DC /* TCScreamer.h */,
+				E4F1B3EE191444B600EEF9DC /* TCScreamer.m */,
+				E4F1B3F31914497600EEF9DC /* ATSMath.h */,
+				E4F1B3EB1914448C00EEF9DC /* falling.wav */,
 				E4F1B3CE191443B400EEF9DC /* Images.xcassets */,
 				E4F1B3C3191443B400EEF9DC /* Supporting Files */,
 			);
@@ -222,6 +237,7 @@
 			files = (
 				E4F1B3C7191443B400EEF9DC /* InfoPlist.strings in Resources */,
 				E4F1B3CF191443B400EEF9DC /* Images.xcassets in Resources */,
+				E4F1B3EC1914448C00EEF9DC /* falling.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +258,8 @@
 			files = (
 				E4F1B3C9191443B400EEF9DC /* main.m in Sources */,
 				E4F1B3CD191443B400EEF9DC /* TCAppDelegate.m in Sources */,
+				E4F1B3EF191444B600EEF9DC /* TCScreamer.m in Sources */,
+				E4F1B3F21914491500EEF9DC /* ATSNumericalQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
