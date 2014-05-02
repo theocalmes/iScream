@@ -21,9 +21,11 @@ TCScreamer *screamer;
 
     screamer = [[TCScreamer alloc] init];
 
-    UIButton *start = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
-    [start setTitle:@"Start" forState:UIControlStateNormal];
+    UIButton *start = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    start.titleLabel.font = [UIFont systemFontOfSize:36];
+    start.frame = CGRectMake(0, 0, 100, 200);
     start.center = self.window.center;
+    [start setTitle:@"Start" forState:UIControlStateNormal];
     [start addTarget:self action:@selector(startDetectingMovement) forControlEvents:UIControlEventTouchUpInside];
 
     [self.window addSubview:start];

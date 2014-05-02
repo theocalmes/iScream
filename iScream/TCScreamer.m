@@ -10,6 +10,7 @@
 #import "ATSNumericalQueue.h"
 
 @import AVFoundation;
+@import CoreMotion;
 
 @interface TCScreamer ()
 
